@@ -1,5 +1,6 @@
 "use client"
-import styles from "./Home.module.css";
+
+import styles from "@/app/Home.module.css"
 
 export default function HomePage() {
     return (
