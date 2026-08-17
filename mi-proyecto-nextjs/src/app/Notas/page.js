@@ -12,7 +12,7 @@ export default function NotasPage() {
 
     return (
         <main>
-            <NotaInput onChange={modificarNota} text={nota} />
+            <NotaInput onChange={modificarNota} number={nota} />
         </main>
     );
 }

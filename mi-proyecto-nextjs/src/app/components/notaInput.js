@@ -1,12 +1,14 @@
 "use client";
 
-export default function NotaInput({ onChange, text }) {
+export default function NotaInput({ onChange, number }) {
     return (
         <div>
             
-            <input type="text"/>
+            <input type="number" onChange={(event) => onChange(event.target.value)}/>
 
-            <h3>La nota dice : {text}</h3>
+            <h3>La nota es : {number}</h3>
         </div>
     );
 }
+
+
