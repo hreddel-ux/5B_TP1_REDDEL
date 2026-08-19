@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import ListaNotas from "@/app/components/listaNotas";
+import ListaNotas from "@/components/listaNotas";
 import styles from "./page.module.css";
 
 export default function NotasPage() {
