@@ -7,13 +7,9 @@ export default function NotaItem({ nota, indice, onEliminar }) {
         Nota N° {indice + 1}: {nota}
       </span>
 
-      <span className={nota >= 6 ? styles.aprueba : styles.noAprueba}>
-        {nota >= 6 ? "✅ Aprueba" : "❌ No aprueba"}
-      </span>
+      <span className={nota >= 6 ? styles.aprueba : styles.noAprueba}>{nota >= 6 ? "✅ Aprueba" : "❌ No aprueba"}</span>
 
-      <button className={styles.boton} onClick={() => onEliminar(indice)}>
-        Eliminar
-      </button>
+      <button className={styles.boton} onClick={() => onEliminar(indice)}>Eliminar</button>
     </li>
   );
 }

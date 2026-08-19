@@ -19,18 +19,10 @@ export default function Home() {
   return (
     <main className={styles.pagina}>
       <div className={styles.columna}>
-        <input
-          className={styles.input}
-          type="text"
-          placeholder="Ingresá tu nombre"
-          value={alumno}
-          onChange={(event) => setAlumno(event.target.value)}
-        />
+        <input className={styles.input} type="text" placeholder="Ingresá tu nombre" value={alumno} onChange={(event) => setAlumno(event.target.value)}/>
 
         {alumno === "" ? (
-          <p className={styles.mensaje}>
-            Por favor, ingresá tu nombre para continuar.
-          </p>
+          <p className={styles.mensaje}>Por favor, ingresá tu nombre para continuar.</p>
         ) : (
           <div className={styles.bienvenida}>
             <p>¡Hola, {alumno}!</p>
@@ -38,12 +30,7 @@ export default function Home() {
           </div>
         )}
 
-        <button
-          className={styles.boton}
-          onClick={() => setMostrarAyuda(!mostrarAyuda)}
-        >
-          Mostrar/Ocultar ayuda
-        </button>
+        <button className={styles.boton} onClick={() => setMostrarAyuda(!mostrarAyuda)}>Mostrar/Ocultar ayuda</button>
 
         {mostrarAyuda && (
           <ul className={styles.ayuda}>

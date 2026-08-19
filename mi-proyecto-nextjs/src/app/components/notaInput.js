@@ -19,13 +19,7 @@ export default function NotaInput({ onAgregar }) {
 
       {esInvalida && (<p className={styles.error}>Ingresá una nota entre 0 y 10.</p>)}
 
-      <button
-        className={styles.boton}
-        onClick={handleAgregar}
-        disabled={esInvalida}
-      >
-        Agregar nota
-      </button>
+      <button className={styles.boton} onClick={handleAgregar} disabled={esInvalida}>Agregar nota</button>
     </div>
   );
 }
